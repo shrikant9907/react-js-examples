@@ -12,21 +12,35 @@ const StopWatch = () => {
   
   const [timer, setTimer] = useState(initialTime)
   const [timerRunning, setTimerRunning] = useState(false)
+  const [resetTimer, setResetTimer] = useState(false)
 
   const timeFormat = (time) => {
-  
+
+    if (!time) {
+      return '00';
+    }
+    
     if (time.toString().length === 1) {
       time = "0" + time;
     }
-
     return time;
   }
 
-  const startTimer = () => {
+  const handleStartTimer = (e) => {
+    setTimerRunning(!timerRunning); // Start / Stop 
+    setResetTimer(false);
+  }
+
+  const handleResetTimer = (e) => {
+    setResetTimer(true); // Reset
+  }
+
+  useEffect(() => {
     let newTimer = Object.assign({}, timer);
-    let timeInterval;
+    let timeInterval = null;
     
     if (!timerRunning) {
+     
       timeInterval = setInterval(() => {
   
         let hours = newTimer.hours;
@@ -34,7 +48,7 @@ const StopWatch = () => {
         let seconds = newTimer.seconds;
         let miliseconds = newTimer.miliseconds + 1;
       
-        if (miliseconds >= 1000) {
+        if (miliseconds >= 100) {
           miliseconds = 0;
           seconds = seconds + 1;
         }
@@ -59,38 +73,39 @@ const StopWatch = () => {
         newTimer.miliseconds = miliseconds;
     
         setTimer({...timer, ...newTimer});
-      }, 1);    
-      setTimerRunning(true);
+      }, 10);    
+
     } else {
       clearInterval(timeInterval);
-      setTimerRunning(false);
     }
- }
 
-  const resetTimer = () => {
-    setTimer(initialTime);
-  }
+    if (resetTimer) {
+      console.log('clicked')
+      clearInterval(timeInterval);
+      setTimer(initialTime); // Reset
+    }
+    
+    return () => {
+      clearInterval(timeInterval);
+    }
+  }, [timerRunning, resetTimer])
 
   return (
     <React.Fragment>
   
       <div className='stopwatch-ui'>
         <div className='timer'>
-
           { (timer.hours > 0) && <span>{timeFormat(timer.hours)}<sub>h</sub></span> }
-
           { (timer.minutes > 0) && <span>{timeFormat(timer.minutes)}<sub>m</sub></span> }
-
           <span>{timeFormat(timer.seconds)}<sub>s</sub></span>
-          
-          <span>{timeFormat(timer.miliseconds.toString().slice(1,4))}<sub>ms</sub></span>
+          <span>{timeFormat(timer.miliseconds.toString().slice(0,2))}<sub>ms</sub></span>
         </div>
 
         <div className='actions'>
-          <button onClick={() => startTimer()} className='startstop-btn'>
+          <button onClick={(e) => handleStartTimer(e)} className='startstop-btn'>
             Start/Stop
           </button>
-          <button onClick={() => resetTimer()} className='reset-btn'>
+          <button onClick={(e) => handleResetTimer(e)} className='reset-btn'>
             Reset
           </button>
         </div>
