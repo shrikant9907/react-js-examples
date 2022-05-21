@@ -1,0 +1,17 @@
+.clock-ui {
+  text-align: center;
+  font-family: monospace;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.clock-ui span {
+  margin: 0 5px;
+}
+
+.clock-ui sub {
+  font-size: 15px;
+  font-weight: normal;
+}
