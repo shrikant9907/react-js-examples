@@ -1,9 +1,10 @@
 import React from "react";
+import Checklist from "./components/Checklist";
 
 function App() {
   return (
     <React.Fragment>
-      <p>First React App</p>
+      <Checklist />
     </React.Fragment>
   );
 }
