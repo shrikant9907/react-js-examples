@@ -4,12 +4,12 @@ React JS - Examples / Components / Exercise / Resuable Codes
 
 ## List React JS Components
 
-1. Alert - Functional Component using React JS
-2. Increment Counter Functional Component using React JS.
-3. Increment & Decrement Counter Functional Component using React JS
-4. Stop Watch Functional Component using React JS
-4. Countdown Timer (Hour, Minutes, Seconds) Functional Component using React JS
-5. Clock Functional Component using React JS.
+1. -[x] Alert - Functional Component using React JS
+2. -[x] Increment Counter Functional Component using React JS.
+3. -[x] Increment & Decrement Counter Functional Component using React JS
+4. -[x] Stop Watch Functional Component using React JS
+4. -[x] Countdown Timer (Hour, Minutes, Seconds) Functional Component using React JS
+5. -[x] Clock Functional Component using React JS.
 6. Button Functional Component using React JS
 7. Input Field Functional Component using React JS
 8. Modal / Popup Functional Component using React JS
@@ -19,7 +19,7 @@ React JS - Examples / Components / Exercise / Resuable Codes
 12. Custom Numeric Keyboard using React JS
 13. Calculator Functional Component using React JS 
 14. Simple List Component in React JS
-15. Simple Checklist Functional Component using React JS
+15. -[x] Simple Checklist Functional Component using React JS
 16. ToDo List Functional Component using React JS
 17. Accordion Functional Component using React JS
 18. Tic Tac Toe Game Component using React JS
