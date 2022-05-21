@@ -39,7 +39,7 @@ const StopWatch = () => {
     let newTimer = Object.assign({}, timer);
     let timeInterval = null;
     
-    if (!timerRunning) {
+    if (timerRunning) {
      
       timeInterval = setInterval(() => {
   
@@ -72,7 +72,9 @@ const StopWatch = () => {
         newTimer.seconds = seconds;
         newTimer.miliseconds = miliseconds;
     
-        setTimer({...timer, ...newTimer});
+        setTimer((preTimer) => {
+          return {...preTimer, ...newTimer}
+        });
       }, 10);    
 
     } else {
