@@ -1,9 +1,10 @@
 import React from "react";
+import IncrementCounter from "./components/IncrementCounter";
 
 function App() {
   return (
     <React.Fragment>
-      <p>First React App</p>
+      <IncrementCounter />
     </React.Fragment>
   );
 }
