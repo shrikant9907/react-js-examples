@@ -1,0 +1,43 @@
+.stopwatch-ui {
+  border: 1px solid #ccc;
+  background-color: #efefef;
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.stopwatch-ui .timer {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.stopwatch-ui .timer span {
+  margin: 0 5px;
+}
+
+.stopwatch-ui .timer sub {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.stopwatch-ui .actions button {
+  padding: 5px;
+  margin: 0 5px;
+  background-color: rgb(221, 30, 30);
+  border: unset;
+  min-width: 80px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color:#fff;
+}
+
+.stopwatch-ui .actions button.startstop-btn {
+  background-color: cornflowerblue;
+}

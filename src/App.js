@@ -1,9 +1,10 @@
 import React from "react";
+import StopWatch from "./components/StopWatch";
 
 function App() {
   return (
     <React.Fragment>
-      <p>First React App</p>
+      <StopWatch />
     </React.Fragment>
   );
 }
