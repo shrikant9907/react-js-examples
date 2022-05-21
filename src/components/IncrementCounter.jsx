@@ -11,6 +11,12 @@ const IncrementCounter = () => {
     setCounter(counter + 1);
   }
 
+  // Function 
+  const decrementCounter = (e) => {
+    e.preventDefault();
+    setCounter(counter - 1);
+  }
+
   const counterStyle = {
     padding: "10px",
     border: "1px solid #eee",
@@ -27,7 +33,8 @@ const IncrementCounter = () => {
     border: "1px solid blue",
     backgroundColor: "#00f",
     color: "#fff",
-    cursor: "pointer"
+    cursor: "pointer",
+    margin: "0 5px"
   }
 
   return (
@@ -35,6 +42,7 @@ const IncrementCounter = () => {
       <div style={counterNumberStyle}>{counter}</div>
       {/* On Click Event */}
       <button onClick={(e) => incrementCounter(e)} style={counterBtnStyle}>Increment</button>
+      <button onClick={(e) => decrementCounter(e)} style={counterBtnStyle}>Decrement</button>
     </div>
   )
 }
