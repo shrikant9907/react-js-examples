@@ -1,0 +1,24 @@
+
+.list-items-ui {
+  background-color: #fff;
+  text-align: left;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-bottom: unset;
+  padding: 0px;
+  margin: 15px;
+}
+ 
+.list-items-ui li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+}
+
+.list-heading {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+ 
