@@ -8,11 +8,11 @@ React JS - Examples / Components / Exercise / Resuable Codes
 
 2. Increment Counter Functional Component in React JS. [#Link](https://github.com/shrikant9907/react-js-examples/blob/increment-counter/src/components/IncrementCounter.jsx)
 
-3. Increment & Decrement Counter Functional Component in React JS. [#Link](https://github.com/shrikant9907/react-js-examples/blob/increment-decrement-counter/src/components/IncrementDecrementCounter.jsx)
+3. Increment & Decrement Counter Functional Component in React JS. [#Link](https://github.com/shrikant9907/react-js-examples/blob/increment-descrement-counter/src/components/IncrementDecrementCounter.jsx)
 
 4. Stop Watch Functional Component in React JS. [#Link](https://github.com/shrikant9907/react-js-examples/blob/stop-watch/src/components/StopWatch.jsx)
 
-4. Countdown Timer (Hour, Minutes, Seconds) Functional Component in React JS. [#Link](https://github.com/shrikant9907/react-js-examples/blob/alert-component/src/components/Countdown.jsx)
+4. Countdown Timer (Hour, Minutes, Seconds) Functional Component in React JS. [#Link](https://github.com/shrikant9907/react-js-examples/blob/countdown/src/components/Countdown.jsx)
 
 5. Clock Functional Component in React JS. [#Link](https://github.com/shrikant9907/react-js-examples/blob/clock/src/components/Clock.jsx)
 
