@@ -1,9 +1,10 @@
 import React from "react";
+import SearchFilter from "./components/SearchFilter";
 
 function App() {
   return (
     <React.Fragment>
-      <p>First React App</p>
+      <SearchFilter />
     </React.Fragment>
   );
 }
